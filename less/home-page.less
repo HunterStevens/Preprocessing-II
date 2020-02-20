@@ -11,21 +11,36 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        .MobileWidth();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        .MobileWidth();
+      }
 
       img {
         border-radius: 10px;
       }
     }
-  }
+
+    @media @mobile{
+      .MobileForm();
+    }
+
+  }//end of content-section class
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    .Top{
+      margin-top: 2%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -45,6 +60,9 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile{
+      .MobileWidth();
+    }
   }
 
   .content-pick {
@@ -56,6 +74,25 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 90%;
+      }
+    }
+    @media @mobile{
+      .MobileForm();
     }
   }
+  .btn{
+    .BtnStyle();
+    @media @mobile{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+@media @mobile {
+  .MobileForm();
+  width:90%
+}
+  
 }// home

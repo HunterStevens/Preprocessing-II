@@ -1,1 +1,35 @@
 // Mixins in here
+.NavLine(){
+    border-bottom: dashed 2px @navigation-border;
+
+}
+
+.BtnStyle(){
+    color:@main-bg;
+    background-color: @button-bg;
+    border-radius: 20px;
+    font-size: 2.2rem;
+    width: 65%;
+    padding: 10px 0;
+    text-align: center;
+
+    &:hover{
+        color: @button-bg;
+        background-color: @main-bg;
+        border: solid 2px @navigation-border;
+        font-size: 2.5rem;
+        padding: 3px 0;
+    }
+
+}
+
+.MobileForm (@align:center, @justify:center){
+    display: flex;
+    flex-direction: column;
+    align-items: @align;
+    justify-content: @justify;
+    
+}
+.MobileWidth(){
+    width:100%;
+}
