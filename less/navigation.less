@@ -1,1 +1,51 @@
 // Navigation Styles here
+.Navi{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    font-size: 62.5%;
+    padding: 1vw 0;
+    .NavLine();
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        max-width:800px;
+        width:80%;
+       
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.7rem;
+            width: 45%;
+            a{
+                color:@font-color;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: @font-color;
+                    color: @main-bg;
+                    padding: 3px;
+                    border-radius: 10px;
+                }
+            }//end of div nav a tag
+            @media @mobile{
+                width: 90%;
+                padding-top: 2%;
+            }
+
+        }
+        @media @mobile{
+            .MobileForm();
+            width:100%;
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }//end of div tag
+    
+
+}//end of nav tag
